@@ -1,8 +1,8 @@
 -- CONFIGURAÇÃO Rad
-local P1000ToggleKey = "H"         -- tecla para ativar/desativar
+local P1000ToggleKey = "X"         -- tecla para ativar/desativar
 local basePosX = -282
 local basePosZ = -68
-local dESYNCCENTRALPOSITION = 170
+local dESYNCCENTRALPOSITION = 146
 local spoofRadius = 1e+37 -- Valor padrão, pode ser alterado pela TextBox
 
 -- SERVIÇOS
@@ -200,7 +200,7 @@ local spoofCFrame = CFrame.new(fakePos) * CFrame.Angles(
     math.rad(RandomNumberRange(180))  
 )  
 hrp.CFrame = spoofCFrame  
-hrp.AssemblyLinearVelocity = Vector3.new(0, 1, 0) * 17000  
+hrp.AssemblyLinearVelocity = Vector3.new(0, 1, 0) * 14000  
 
 -- aguarda próximo frame de renderização  
 RunService.RenderStepped:Wait()  
